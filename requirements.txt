@@ -1,0 +1,12 @@
+torch
+transformers>=4.44
+datasets>=2.20,<4.0
+peft>=0.12
+accelerate>=0.33
+evaluate
+scikit-learn
+shap>=0.45
+pandas
+matplotlib
+seaborn
+numpy
