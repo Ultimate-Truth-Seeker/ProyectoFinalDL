@@ -28,3 +28,14 @@ python -m src.aggregate    # tabla + figuras
 Estructura: `src/` (código), `run_all.py` (experimento completo), `results/` (json, tablas, SHAP), `figures/`, `docs/` (informe, guion, slides).
 
 Licencias de datos: CC BY 3.0 (tweets; respetar términos de Twitter) y MIT (noticias).
+
+## Resultados (T4, test de 870 tweets, F1 macro)
+| Método | F1 macro | Params entrenables | Mem. pico | Tiempo |
+|---|---|---|---|---|
+| Zero-shot Qwen2.5-1.5B | 0.478 | 0 | 3.6 GB | 21 s (inferencia) |
+| Few-shot (3 por clase) | 0.479 ± 0.026 | 0 | 5.3 GB | 93 s (inferencia) |
+| Fine-tuning completo XLM-R | 0.667 ± 0.012 | 278 M | 5.4 GB | 422 s |
+| LoRA r=8 | 0.673 ± 0.013 | 0.89 M | 1.9 GB | 33 s |
+
+Tabla completa en `results/tabla_comparativa.md`; análisis en `docs/informe.pdf`; presentación en `docs/presentacion.pptx`.
+Nota: `results/explain/shap_text.html` (37 MB) no se versiona (ver `.gitignore`).
