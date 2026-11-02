@@ -1,3 +1,7 @@
+# Video de Presentación
+
+[Enlace a YouTube](https://youtu.be/bf50IK5eU04)
+
 # LoRA vs fine-tuning completo vs prompting para análisis de sentimiento en tweets en español
 
 Proyecto Final de Deep Learning (UVG). Compara tres estrategias de adaptación de modelos de lenguaje
